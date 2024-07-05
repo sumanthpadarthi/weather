@@ -101,10 +101,10 @@ function Forecast({ weather }) {
         </div>
       </div>
       <div className="forecast">
-        <h3>5-Day Forecast:</h3>
+        <h3>7-Day Forecast:</h3>
         <div className="forecast-container">
           {forecastData &&
-            forecastData.slice(0, 5).map((day) => (
+            forecastData.slice(0, 7).map((day) => (
               <div className="day" key={day.time}>
                 <p className="day-name">{formatDay(day.time)}</p>
                 {day.condition.icon_url && (
